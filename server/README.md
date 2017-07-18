@@ -1,6 +1,6 @@
 # Installation
 
-The idea is to have WebRTC using RTCMulticonnection running on an https server using let's encrypt.
+The idea is to have WebRTC using RTCMulticonnection running on an https server using letsencrypt.
 
 Chrome and Chromium won’t work without https, hence letsencrypt.
 
@@ -10,7 +10,7 @@ I run this on a linode small instance. I've had trouble with AWS, but that might
 
 I'm assuming Ubuntu.
 
-# Install and configure Apache 
+## Install and configure Apache 
 
 I used [this guide](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04) for letsencrypt.
 
@@ -45,7 +45,7 @@ contents:
     sudo service apache2 reload
     sudo service apache2 restart
 
-Add certs
+## Add certs
 
     sudo apt-get install git
     sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
@@ -66,7 +66,7 @@ contents
      30 2 * * 1 sudo -H /opt/letsencrypt/letsencrypt-auto renew >> /var/log/lets-encrypt/le-renew.log
 
 
-Get and install [RTCMultiConnection](http://www.rtcmulticonnection.org)
+## Get and install [RTCMultiConnection](http://www.rtcmulticonnection.org)
 
 Install node
 
@@ -87,7 +87,7 @@ Add a new directory 'libbybot', and add the html and javascript files into that 
 
 @@
 
-Run the server:
+## Run the server:
 
     nohup nodejs server.js > /dev/null 2>&1 &
 
