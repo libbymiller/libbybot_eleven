@@ -7,9 +7,9 @@ You need to do the server part of this first.
 What you'll need:
 
  * Pi 3
- * right angled cable
- * IKEA lamp
- * long canera cable
+ * right angled power cable
+ * IKEA EXPRESSIVO lamp
+ * long camera cable
  * raspi camera
  * 2 x 9g servos, small as you can get them
  * tiny breadboard
@@ -25,6 +25,10 @@ What you'll need:
  * a USB mouse
  * maybe a USB keyboard
  * temporary use of an HDMI-compatible monitor or TV
+ * a gluegun
+ * little rubber feet
+ * a thin small cable tie
+ * a 2cm x 1cm x 3mm (or 5mm) piee of plastic or something equally tough
 
 The only really expensive thing is the speaker / mic. If you're going to 
 use it seriously, this is the most important bit. I've tried a Jabra for 
@@ -34,8 +38,8 @@ requirements then the Sennheiser.
 Of course you don't have to use an IKEA ESPRESSIVO lamp. This project 
 originally started off much more like a picture frame - you can see the 
 pictures 
-[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664) 
-- but it's hard to fit in the speaker. My research has shown that 
+[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664), 
+but it's hard to fit in the speaker. My research has shown that 
 showing my face to the participants of a teleconference is not necessary 
 as long as I can hear, speak, see and move a little (in that order).
 
@@ -47,7 +51,7 @@ This is mostly a matter of making sure the audio and video drivers are
 in place, and then running chromium on boot, together with a simple 
 python server for controlling the servos.
 
-## set up the Pi with jessie (not Jessie-lite)
+## Set up the Pi with jessie (not Jessie-lite)
 
 e.g. on a mac (here are full instructions)
 
@@ -80,7 +84,7 @@ Log in, e.g. by using a screen and keyboard and mouse or by sharing your
 network over ethernet and sshing in, or sshing in over your network if 
 you added the credentials beforehand.
 
-Add audio andvideo drivers
+## Add audio and video drivers
 
     sudo nano /etc/modules
 
@@ -99,7 +103,7 @@ contents:
 
     options bcm2835-v4l2 gst_v4l2src_is_broken=1
 
-Enable USB audio
+## Enable USB audio
 
     sudo nano /boot/config.txt 
 
@@ -128,7 +132,7 @@ contents:
 can check this later with the USB speaker plugged in and do ```aplay 
 -l```. See [more details](http://raspberrypi.stackexchange.com/questions/39928/unable-to-set-default-input-and-output-audio-device-on-raspberry-jessie).
 
-Add autostart
+## Add autostart
 
     nano ~/.config/lxsession/LXDE-pi/autostart
 
@@ -163,7 +167,7 @@ Change the pi name and password
     sudo nano /etc/hosts
     passwd
 
-# Assemble everything
+## Assemble everything
 
 Shutdown and unplug the pi, then - 
 
@@ -178,7 +182,7 @@ accept access to the the mic and camera. Allow it using the mouse.
 
 Then connect to https://your-server:8443/remote11.html on a laptop, 
 ideally in chrome. You should see whatever the camera is pointing at, 
-and be able to hear too, and speak.
+and be able to hear too, and speak. You don't need the mouse or screen any more.
 
 
 
