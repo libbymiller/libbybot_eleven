@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    var roomNumber;
+    function onload() { 
+        roomNumber = document.getElementById('roomNumber');
+    }
+    function goToRoom(){
+        console.log(roomNumber.value);
+        window.location = "/libbybot/remote11.html#"+roomNumber.value;
+    }
+</script>
+
+<body onload="onload();">
+    <input type="text" name="enter" class="enter" value="" id="roomNumber"/>
+    <input type="button" value="click" onclick="goToRoom();"/>
+</body>
