@@ -2,12 +2,14 @@
 
 This is a very simple piece of code that expects commands over serial of the form:
 
-   number degrees [p|n]
+    number degrees [p|n]
 
 e.g. 
 
 ```1 90``` means turn servo 1 to absolute position of 90 degrees.
+
 ```1 10 p``` means turn servo 1 to 10 degrees in a positive direction.
+
 ```2 10 n``` means turn servo 1 to 10 degrees in a negative direction.
 
 Servo 1 is the "head" of the lamp (nodding, etc) and goes in arduino pin 3; 
