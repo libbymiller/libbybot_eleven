@@ -58,8 +58,8 @@ requirements than the Sennheiser.
 Of course you don't have to use an IKEA ESPRESSIVO lamp. This project 
 originally started off much more like a picture frame - you can see the 
 pictures 
-[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664), 
-but it's hard to fit the speaker nto some sort of sensible shape. My 
+[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664) - 
+but it's hard to fit the speaker into some sort of sensible shape. My 
 robot research has shown that showing my face to the participants of a 
 teleconference is not necessary as long as I can hear, speak, see and move 
 a little (in that order).
