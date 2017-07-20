@@ -83,11 +83,13 @@ Install node
 
 Replace the default server with the one in this in this github.
 
-Add a new directory 'libbybot', and add the html and javascript files into that directory.
-
-@@
+Add a new directory 'libbybot', and add the html and javascript files from 
+this github repo directory into that directory.
 
 ## Run the server:
 
     nohup nodejs server.js > /dev/null 2>&1 &
 
+Longer term, you need to figure out how to do notifications. There's a 
+place in [server.js](/../server/server.js) where you can send a dm tweet,
+for example.
