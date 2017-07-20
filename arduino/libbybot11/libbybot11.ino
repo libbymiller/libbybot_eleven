@@ -57,7 +57,7 @@ void loop()
           myservo.attach(SERVOPIN1);  
           if(sign == "p"){
              motor_position = last_pos1 + motor_position;
-          }else if(sign == "m"){
+          }else if(sign == "n"){
              motor_position = last_pos1 - motor_position;   
           }
           if(last_pos1 < motor_position){
