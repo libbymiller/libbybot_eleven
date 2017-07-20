@@ -143,8 +143,10 @@ Hopefully it will boot fullscreen into the browser and request that you
 accept access to the the mic and camera. Allow it using the mouse.
 
 Then connect to https://your-server:8443/remote11.html on a laptop, 
-ideally in chrome. You should see whatever the camera is pointing at, 
+ideally in Chrome. You should see whatever the camera is pointing at, 
 and be able to hear too, and speak. You don't need the mouse or screen any more.
 
-
+Longer term, you need to figure out how to do notifications. There's a 
+place in [server.js](/../server/server.js) where you can send a dm tweet, 
+for example.
 
