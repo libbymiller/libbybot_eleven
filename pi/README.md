@@ -1,49 +1,11 @@
 # Introduction
 
-The idea is that you run a headless browser on the pi, and connect to it via a laptop or phone using a browser.
+The idea is that you run a headless browser on the pi, and connect to it 
+via a laptop or phone using a browser. 
 
-You need to do the server part of this first.
+You'll need a [server](/server) to connect to first.
 
-What you'll need:
-
- * Pi 3
- * right angled power cable
- * IKEA EXPRESSIVO lamp
- * long camera cable
- * raspi camera
- * 2 x 9g servos, small as you can get them
- * tiny breadboard
- * 2.3A USB plug
- * 3 x MM jumper cables
- * 6 x MF jumper cables 
- * a [Sennheiser USB speaker / mic](http://www.exteradirect.co.uk/product/sennheiser/sp20-portable-speakerphone-usb-&-3.5mm/3258/)
- * arduino nano (e.g. a clone)
- * a CD or a custom laser cut shape
- * Something to cut holes in the lamp's plastic like a dremel
- * a hacksaw
- * a phillip's head screwdriver
- * a USB mouse
- * maybe a USB keyboard
- * temporary use of an HDMI-compatible monitor or TV
- * a gluegun
- * little rubber feet
- * a thin small cable tie
- * a 2cm x 1cm x 3mm (or 5mm) piee of plastic or something equally tough
-
-The only really expensive thing is the speaker / mic. If you're going to 
-use it seriously, this is the most important bit. I've tried a Jabra for 
-this purpose but they are unreliable, guesing they have heavier power 
-requirements then the Sennheiser.
-
-Of course you don't have to use an IKEA ESPRESSIVO lamp. This project 
-originally started off much more like a picture frame - you can see the 
-pictures 
-[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664), 
-but it's hard to fit in the speaker. My research has shown that 
-showing my face to the participants of a teleconference is not necessary 
-as long as I can hear, speak, see and move a little (in that order).
-
-More on how to actually fit it into the lamp is in docs/.
+More on how to actually fit it into the lamp is in [docs](docs/).
 
 # Installation
 
