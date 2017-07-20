@@ -15,7 +15,7 @@ python server for controlling the servos.
 
 ## Set up the Pi with jessie (not Jessie-lite)
 
-e.g. on a mac (here are full instructions)
+e.g. on a mac ([here are full instructions](https://www.raspberrypi.org/documentation/installation/installing-images/))
 
 Replace 'N' by the disk number you get in the first step.
 
@@ -27,7 +27,7 @@ Replace 'N' by the disk number you get in the first step.
 
     touch /Volumes/boot/ssh
 
-(optional, [add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian) to /Volumnes/boot/wpa_supplicant.conf:
+(optional, [add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian)) to /Volumes/boot/wpa_supplicant.conf:
 
     nano /Volumes/boot/wpa_supplicant.conf
 
@@ -61,7 +61,7 @@ part that took me longest to find):
 
     sudo nano /etc/modprobe.d/bcm2835-v4l2.conf
 
-contents:
+[contents](https://stackoverflow.com/questions/25941171/how-to-get-gstreamer1-0-working-with-v4l2-raspicam-driver):
 
     options bcm2835-v4l2 gst_v4l2src_is_broken=1
 
