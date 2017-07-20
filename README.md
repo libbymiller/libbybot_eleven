@@ -2,8 +2,8 @@
 
 Eleventh incarnation of 
 [libbybot](https://planb.nicecupoftea.org/2017/03/03/libbybot-presence-with-chromium-51-raspberry-pi-and-rtcmulticonnection-for-webrtc/), 
-a cheapo presence robot using webRTC and a Raspberry Pi, currently living 
-in an IKEA lamp
+a cheapo, remotely-posable presence robot using webRTC and a Raspberry Pi, 
+currently living in an IKEA lamp
 
 Contains full instructions and code.
 
@@ -45,6 +45,10 @@ and
  * a USB mouse
  * maybe a USB keyboard
  * temporary use of an HDMI-compatible monitor or TV
+
+and, once you're up and running
+
+ * a friendly helper where you want to be, to plug the lamp in
 
 The only really expensive thing is the speaker / mic. If you're going to 
 use it seriously, this is the most important bit. I've tried a Jabra for 
