@@ -1,16 +1,14 @@
 #include <Servo.h>
 
-#define SERVOPIN1 4
-#define SERVOPIN2 5
-#define SERVOPIN3 6
-#define SERVOPIN4 7
+#define SERVOPIN1 3
+#define SERVOPIN2 4
+#define SERVOPIN3 5
+#define SERVOPIN4 6
 
 Servo myservo;  // create servo object to control a servo
 
 // variable to store the servo position
-
 int last_pos1 = 0;
-
 int last_pos2 = 0;
 
 //not currently used
@@ -41,12 +39,13 @@ void loop()
 
         //for relative values
         String rval = getValue(str, ' ', 2);
-        Serial.println(rval);
         
         which_motor = xval.toInt();
         motor_position = yval.toInt();
         sign = rval;
         
+        Serial.println("sign is");
+        Serial.println(sign);
         Serial.println("which_motor is ");
         Serial.println(which_motor);
         Serial.println("motor_position is ");
@@ -57,8 +56,12 @@ void loop()
           myservo.attach(SERVOPIN1);  
           if(sign == "p"){
              motor_position = last_pos1 + motor_position;
+             Serial.println("p moving to ");
+             Serial.println(motor_position);
           }else if(sign == "n"){
              motor_position = last_pos1 - motor_position;   
+             Serial.println("m moving to ");
+             Serial.println(motor_position);
           }
           if(last_pos1 < motor_position){
            for (int pos = last_pos1; pos <= motor_position; pos += 1) { // goes from 0 degrees to 180 degrees
@@ -81,7 +84,7 @@ void loop()
           myservo.attach(SERVOPIN2);
           if(sign == "p"){
              motor_position = last_pos2 + motor_position;
-          }else if(sign == "m"){
+          }else if(sign == "n"){
              motor_position = last_pos2 - motor_position;   
           }
           if(last_pos2 < motor_position){
@@ -105,7 +108,7 @@ void loop()
           myservo.attach(SERVOPIN3);          
           if(sign == "p"){
              motor_position = last_pos3 + motor_position;
-          }else if(sign == "m"){
+          }else if(sign == "n"){
              motor_position = last_pos3 - motor_position;   
           }
           if(last_pos3 < motor_position){
@@ -129,7 +132,7 @@ void loop()
           myservo.attach(SERVOPIN4);          
           if(sign == "p"){
              motor_position = last_pos4 + motor_position;
-          }else if(sign == "m"){
+          }else if(sign == "n"){
              motor_position = last_pos4 - motor_position;  
           }
           if(last_pos4 < motor_position){
@@ -154,7 +157,7 @@ void loop()
     }
 }
 
-
+// only used for testing
 int blink(int i){
         if(i){
           for(int j=0; j< i; j++){
