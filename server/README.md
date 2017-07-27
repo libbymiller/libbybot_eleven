@@ -4,7 +4,7 @@ The idea is to have WebRTC using RTCMulticonnection running on an https server u
 
 Chrome and Chromium won’t work without https, hence letsencrypt.
 
-I have a slightly custom version of the server, js and html files.
+I have a slightly custom version of the RTCMulticonnection server, js and html files, included in this repo.
 
 I run this on a linode small instance. I've had trouble with AWS, but that might just be me. Bear in mind that webRTC needs [a lot of ports open](https://www.quora.com/What-ports-does-WebRTC-use?share=1).
 
