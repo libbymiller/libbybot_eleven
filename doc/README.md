@@ -70,14 +70,14 @@ On the arduino you should have the top servo connected to pin D3 and the other t
 pin D4.
 
 Connect:
- * 5v on pi to 5v on the arduino (e.g. GPIO physical numbering 2 or 4)
+ * 5v on pi to 5v on the arduino (e.g. [GPIO physical numbering](https://www.raspberrypi.org/documentation/usage/gpio/) 2 or 4)
  * ground on the pi to ground on the arduino (e.g. GPIO physical numbering 6, 9 etc)
  * pi's TDX (GPIO physical numbering pin 8) to arduino's RX
 
 <img src="images/pi_arduino.jpg" width="500px"/>
 
-Normally you'd (need a voltage 
-divider)[https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/] 
+Normally you'd [need a voltage 
+divider](https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/) 
 to do this serial communication, but because we're only going one way - from the 
 pi to the arduino - we get away with it.
 
@@ -112,9 +112,7 @@ of the base for it to fit. It must not be forced or bend! You may also need to s
 off the top of one of the base plate's screw casings (make sure you get the right 
 one).
 
-<img src="images/saw_a_notch.jpg" width="300px"/>
-<img src="images/saw_the_screw_casing.jpg" width="300px"/>
-<img src="images/fit_the_psu.jpg" width="300px"/>
+<img src="images/saw_a_notch.jpg" width="300px"/><img src="images/saw_the_screw_casing.jpg" width="300px"/><img src="images/fit_the_psu.jpg" width="300px"/>
 
 Replace the bottom plate - you may need to twist it slightly to get it on its 
 rails. Screw it on, omitting the screw where you removed the base plate. Glue the 
