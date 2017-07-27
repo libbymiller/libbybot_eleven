@@ -20,13 +20,12 @@ You need to do the [server](/server) part of this first, then set up the
 ## What you'll need:
 
  * Raspberry Pi 3 (other versions don't have the oomph to run chromium and do video, though they can do audio, if you don't want to "see").
- * right angled power cable - make sure you get the right way round ([e.g.](http://www.ebay.co.uk/itm/2m-USB-2-0-A-To-RIGHT-ANGLE-MICRO-B-Data-Charging-Cable-Lead-007244/191324559571))
+ * an official [Raspberry pi power cable](https://shop.pimoroni.com/products/raspberry-pi-universal-power-supply) - we're using a lot of amps! else you may get strange outages.
  * IKEA EXPRESSIVO lamp (discontinued, but most people have one at home, ask around)
  * [long Raspberry Pi camera cable](https://shop.pimoroni.com/products/raspberry-pi-camera-cable)
  * [Raspberry Pi camera](https://shop.pimoroni.com/products/raspberry-pi-camera-module-v2-1-with-mount)
  * 2 x 9g servos, small as you can get them ([e.g.](http://www.ebay.co.uk/itm/Mini-SG90-SG-90-Gear-9g-Micro-Servo-For-RC-Airplane-Helicopter-Car-Boat-Arduino/252297215595))
  * a [tiny breadboard](https://shop.pimoroni.com/products/colourful-mini-breadboard)
- * 2.3A USB plug
  * 3 x MM jumper cables
  * 6 x MF jumper cables 
  * a [Sennheiser USB speaker / mic](http://www.exteradirect.co.uk/product/sennheiser/sp20-portable-speakerphone-usb-&-3.5mm/3258/)
