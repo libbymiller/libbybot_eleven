@@ -115,7 +115,7 @@ one).
 <img src="images/saw_a_notch.jpg" width="300px"/><img src="images/saw_the_screw_casing.jpg" width="300px"/><img src="images/fit_the_psu.jpg" width="300px"/>
 
 Replace the bottom plate - you may need to twist it slightly to get it on its 
-rails. Screw it on, omitting the screw where you removed the base plate. Glue the 
+rails. Screw it on, omitting the screw near where you cut the notch. Glue the 
 servo horn part to the CD base and add rubber feet.
 
 If you have laser cut the base components in the 
