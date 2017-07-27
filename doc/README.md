@@ -18,6 +18,8 @@ Snap off the inside segments of the base to make as much room as you can.
 
 Carefully saw the backs off the top arial covers. But don't saw off too much....
 
+<img src="images/top_side_view.jpg" width="500px"/>
+
 Saw or dremel a hole in the back of the base. This needs to be wide and 
 deep enough to get a USB cable and a wifi camera cable into (it's also 
 sometimes useful to be able to get the Ethernet cable in too if possible).
@@ -72,6 +74,8 @@ Connect:
  * ground on the pi to ground on the arduino (e.g. GPIO physical numbering 6, 9 etc)
  * pi's TDX (GPIO physical numbering pin 8) to arduino's RX
 
+<img src="images/pi_arduino.jpg" width="500px"/>
+
 Normally you'd (need a voltage 
 divider)[https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/] 
 to do this serial communication, but because we're only going one way - from the 
@@ -91,18 +95,26 @@ way round.)
 
 ## Connect everything together
 
-This is quite a wedge and it's why you need to get the right angled power 
-cable and the smallest 9g servo you can find.
+This is quite a wedge and it's why you need the smallest 9g servo you can find.
 
-Basically the pi goes at the bottom at an angle with the breadboard underneath the Pi.
+Basically the pi goes in the bottom at an angle with the breadboard underneath the Pi.
 It needs to be placed at a downward angle so that the USB port is accessble 
 through the slot, and so that there's room for the servo.
+
+First, make sure you've programmed the arduino and got the pi on the network you 
+want to use it on, and that you've connected the Arduino via serial to the PI (see 
+above). You can't reprogramme the arduino once it's in because it can't be 
+programmed with the serial attached.
 
 Connect the power cable to the PI, and, making sure you have the lamp base the 
 right way round (there's a notch at the back) carefully mark and saw a wedge out 
 of the base for it to fit. It must not be forced or bend! You may also need to saw 
 off the top of one of the base plate's screw casings (make sure you get the right 
 one).
+
+<img src="images/saw_a_notch.jpg" width="300px"/>
+<img src="images/saw_the_screw_casing.jpg" width="300px"/>
+<img src="images/fit_the_psu.jpg" width="300px"/>
 
 Replace the bottom plate - you may need to twist it slightly to get it on its 
 rails. Screw it on, omitting the screw where you removed the base plate. Glue the 
