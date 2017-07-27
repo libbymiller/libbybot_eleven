@@ -63,4 +63,4 @@ robot research has shown that showing my face to the participants of a
 teleconference is not necessary as long as I can hear, speak, see and move 
 a little (in that order).
 
-More on how to actually fit it into the lamp is in [docs](docs/).
+More on how to actually fit it into the lamp is in [docs](doc/).
