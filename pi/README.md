@@ -5,7 +5,7 @@ via a laptop or phone using a browser.
 
 You'll need a [server](/server) to connect to first.
 
-More on how to actually fit it into the lamp is in [docs](docs/).
+More on how to actually fit it into the lamp is in [doc](doc/).
 
 # Installation
 
