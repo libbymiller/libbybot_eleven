@@ -43,6 +43,7 @@ void loop()
         which_motor = xval.toInt();
         motor_position = yval.toInt();
         sign = rval;
+        sign.trim();
         
         Serial.println("sign is");
         Serial.println(sign);
@@ -60,7 +61,7 @@ void loop()
              Serial.println(motor_position);
           }else if(sign == "n"){
              motor_position = last_pos1 - motor_position;   
-             Serial.println("m moving to ");
+             Serial.println("n moving to ");
              Serial.println(motor_position);
           }
           if(last_pos1 < motor_position){
