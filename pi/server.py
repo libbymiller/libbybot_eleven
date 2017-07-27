@@ -17,8 +17,8 @@ GESTURE_LEAVING = [["2", "160"]]
 GESTURE_LOOKING_ROUND = [["1", "60"],["1", "120"],["1", "90"]]
 GESTURE_REVOLVE_ALL_LEFT = [["1", "180"]]
 GESTURE_REVOLVE_ALL_RIGHT = [["1", "0"]]
-GESTURE_A_BIT_RIGHT = [["1", "120"]]
-GESTURE_A_BIT_LEFT = [["1", "60"]]
+GESTURE_A_BIT_RIGHT = [["1", "40", "p"]]
+GESTURE_A_BIT_LEFT = [["1", "40", "n"]]
 
 ser = serial.Serial('/dev/serial0', 9600)
 
@@ -53,6 +53,12 @@ def index():
           arduino_command = GESTURE_REVOLVE_ALL_LEFT
         if(command == "right"):
           arduino_command = GESTURE_REVOLVE_ALL_RIGHT
+
+
+        if(command == "left_a_bit"):
+          arduino_command = GESTURE_A_BIT_LEFT
+        if(command == "right_a_bit"):
+          arduino_command = GESTURE_A_BIT_RIGHT
 
 # pass through
 
