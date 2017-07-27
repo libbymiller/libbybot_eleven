@@ -1,6 +1,8 @@
 # Installation
 
-The idea is to have WebRTC using RTCMulticonnection running on an https server using letsencrypt.
+The idea is to have WebRTC (web-based peer-to-peer audio / video / data) using 
+[RTCMulticonnection](http://www.rtcmulticonnection.org) running on an https server 
+using [letsencrypt](https://letsencrypt.org).
 
 Chrome and Chromium won’t work without https, hence letsencrypt.
 
