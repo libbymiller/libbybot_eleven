@@ -90,9 +90,21 @@ contents:
     defaults.pcm.card 0;
     defaults.ctl.card 0;
 
-(I find USB audio on the pi very tricky and I'm not the only one. You 
+(I find USB audio on the linux / Pi very tricky and I'm not the only one. You 
 can check this later with the USB speaker plugged in and do ```aplay 
 -l```. See [more details](http://raspberrypi.stackexchange.com/questions/39928/unable-to-set-default-input-and-output-audio-device-on-raspberry-jessie).)
+
+## Give the GPU more oomph
+
+This is optional, but you'll get smoother video performance at the cost of the ship getting hotter...! ([more info](https://raspberrypi.stackexchange.com/a/1885)).
+
+Edit config.txt
+
+    sudo pico /boot/config.txt  
+
+contents - add or edit:
+
+    gpu_mem=192 
 
 ## Add autostart
 
