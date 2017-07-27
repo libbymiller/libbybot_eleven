@@ -92,7 +92,7 @@ contents:
 
 (I find USB audio on the pi very tricky and I'm not the only one. You 
 can check this later with the USB speaker plugged in and do ```aplay 
--l```. See [more details](http://raspberrypi.stackexchange.com/questions/39928/unable-to-set-default-input-and-output-audio-device-on-raspberry-jessie).
+-l```. See [more details](http://raspberrypi.stackexchange.com/questions/39928/unable-to-set-default-input-and-output-audio-device-on-raspberry-jessie).)
 
 ## Add autostart
 
@@ -109,7 +109,9 @@ contents:
     #@v4l2-ctl --set-ctrl=rotate=270 # if you need to rotate the camera picture
     @/bin/bash /home/pi/start_chromium.sh
 
-Add the files start_chromium and server.py from this directory into the pi homedirectory. Edit start_chromium.sh to refer to your server.
+Add the files start_chromium and server.py from this directory into the pi homedirectory. Edit ```start_chromium.sh``` to refer to your server.
+
+Make them executable:
 
     chmod a+x start_chromium.sh server.py
 
@@ -143,7 +145,7 @@ Hopefully it will boot fullscreen into the browser and request that you
 accept access to the the mic and camera. Allow it using the mouse.
 
 Then connect to https://your-server:8443/remote11.html on a laptop, 
-ideally in Chrome. You should see whatever the camera is pointing at, 
+ideally in Chrome. You should see whatever the Pi's camera is pointing at, 
 and be able to hear too, and speak. You don't need the mouse or screen any more.
 
 Longer term, you need to figure out how to do notifications. There's a 

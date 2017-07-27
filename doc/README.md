@@ -25,6 +25,9 @@ sometimes useful to be able to get the Ethernet cable in too if possible).
 Dremel two holes in the centre of the flat base panel such that the servo 
 exactly fits. 
 
+You'll also need to saw a small wedge out of the base to fit the power supply cable in. 
+It's easier to do this at the end - see below.
+
 ## Connect the top servo
 
 This is extra fiddly.
@@ -61,10 +64,20 @@ Test the servo again.
 
 We're using a serial connection to save space.
 
-You should have the top servo connected to pin D3 and the other to pin D4. 
-Connect the pi's RX to ....@@
+On the arduino you should have the top servo connected to pin D3 and the other to 
+pin D4.
 
-Stick the breadboard to the back of the Pi.
+Connect:
+ * 5v on pi to 5v on the arduino (e.g. GPIO physical numbering 2 or 4)
+ * ground on the pi to ground on the arduino (e.g. GPIO physical numbering 6, 9 etc)
+ * pi's TDX (GPIO physical numbering pin 8) to arduino's RX
+
+Normally you'd (need a voltage 
+divider)[https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/] 
+to do this serial communication, but because we're only going one way - from the 
+pi to the arduino - we get away with it.
+
+Stick or rest the breadboard to the back of the Pi.
 
 ## Add the camera
 
@@ -81,12 +94,19 @@ way round.)
 This is quite a wedge and it's why you need to get the right angled power 
 cable and the smallest 9g servo you can find.
 
-Basically the pi goes at the bottom at an angle with the brreadboard with 
-its arduino on top of it. It needs to be placed at an angle so that the USB 
-port is accessble through the slot, and so that there's room for the servo. 
-Connect the power cable and feed it through the gap in the back. Replace 
-the bottom plate - you may need to twist it slightly to get it on its 
-rails. Screw it on. Glue the servo horn part to the CD base and add rubber feet.
+Basically the pi goes at the bottom at an angle with the breadboard underneath the Pi.
+It needs to be placed at a downward angle so that the USB port is accessble 
+through the slot, and so that there's room for the servo.
+
+Connect the power cable to the PI, and, making sure you have the lamp base the 
+right way round (there's a notch at the back) carefully mark and saw a wedge out 
+of the base for it to fit. It must not be forced or bend! You may also need to saw 
+off the top of one of the base plate's screw casings (make sure you get the right 
+one).
+
+Replace the bottom plate - you may need to twist it slightly to get it on its 
+rails. Screw it on, omitting the screw where you removed the base plate. Glue the 
+servo horn part to the CD base and add rubber feet.
 
 If you have laser cut the base components in the 
 [laser_cut_base](laser_cut_base/) directory, glue the servo horn to base 1, 
