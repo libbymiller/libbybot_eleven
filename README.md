@@ -2,7 +2,7 @@
 
 Eleventh incarnation of 
 [libbybot](https://planb.nicecupoftea.org/2017/03/03/libbybot-presence-with-chromium-51-raspberry-pi-and-rtcmulticonnection-for-webrtc/), 
-a cheapo, remotely-posable presence robot using webRTC and a Raspberry Pi, 
+a cheapo, remotely-posable presence robot using [webRTC](https://en.wikipedia.org/wiki/WebRTC) and a Raspberry Pi, 
 currently living in an IKEA lamp
 
 Contains full instructions and code.
@@ -11,7 +11,7 @@ Contains full instructions and code.
 width="500" alt="Libbybot 8"/>
 
 The idea is that you run a headless browser on a Raspberry Pi in the lamp, 
-and connect to it via a laptop or phone using a browser.
+and connect to it remotely via a laptop or phone using a browser (Chrome or Firefox).
 
 You need to do the [server](/server) part of this first, then set up the 
 [arduino](/arduino) and [pi](/pi). Construction instructions are in 
@@ -47,7 +47,7 @@ and
 
 and, once you're up and running
 
- * a friendly helper where you want to be, to plug the lamp in
+ * a friendly helper in the remote place where you want to be, to plug the lamp in
 
 The only really expensive thing is the speaker / mic. If you're going to 
 use it seriously, this is the most important bit. I've tried a Jabra for 
