@@ -96,7 +96,7 @@ can check this later with the USB speaker plugged in and do ```aplay
 
 ## Give the GPU more oomph
 
-This is optional, but you'll get smoother video performance at the cost of the ship getting hotter...! ([more info](https://raspberrypi.stackexchange.com/a/1885)).
+This is optional, but you'll get smoother video performance at the cost of the chip getting hotter...! ([more info](https://raspberrypi.stackexchange.com/a/1885)).
 
 Edit config.txt
 
