@@ -33,6 +33,9 @@ Replace 'N' by the disk number you get in the first step.
 
 contents:
 
+     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+     update_config=1
+
      network={
        ssid="foo"
        psk="bar"
