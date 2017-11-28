@@ -7,7 +7,7 @@ currently living in an IKEA lamp
 
 Contains full instructions and code.
 
-<img src="https://farm4.staticflickr.com/3936/33471118606_f3867f28b7_k.jpg" 
+<img src="https://libbymiller.files.wordpress.com/2017/07/image_uploaded_from_ios.jpg" 
 width="500" alt="Libbybot 8"/>
 
 The idea is that you run a headless browser on a Raspberry Pi in the lamp, 
