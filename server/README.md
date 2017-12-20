@@ -16,12 +16,14 @@ I'm assuming Ubuntu.
 
 I used [this guide](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04) for letsencrypt.
 
+First set up your subdomain, for example 'libbybot.example.com' and make sure your DNS is in place. 
+
 Install apache
 
     sudo apt-get install apache2
 
     sudo mkdir -p /var/www/your-server/public_html
-    sudo chown -R $USER:$USER /var/www/your-server/public_html
+    sudo chown -R $USER:$USER /var/www/your-server
     sudo chmod -R 755 /var/www
     nano /var/www/your-server/public_html/index.html
     sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/your-server.conf
@@ -39,11 +41,12 @@ contents:
         ErrorLog ${APACHE_LOG_DIR}/your-server_error.log
         CustomLog ${APACHE_LOG_DIR}/your-server_access.log combined
         RewriteEngine on
-        RewriteCond %{SERVER_NAME} = your-server
+        RewriteCond %{SERVER_NAME} your-server
         RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,QSA,R=permanent]
     </VirtualHost>
 
     sudo a2ensite your-server.conf
+    sudo a2enmod rewrite
     sudo service apache2 reload
     sudo service apache2 restart
 
@@ -60,7 +63,7 @@ contents:
 
 auto-renew
 
-     nano crontab -e
+     crontab -e
 
 contents
 
@@ -72,7 +75,7 @@ contents
 
 Install node
 
-    curl -sL https://deb.nodesource.com/setup | sudo bash -
+    curl -sL https://deb.nodesource.com/setup_4.x — Node.js v4 LTS "Argon"
 
     sudo apt-get install -y nodejs
 
@@ -83,7 +86,7 @@ Install node
     cd RTCMultiConnection
     npm install --production
 
-Replace the default server with the one in this in this github.
+Replace the default server with the one in this in this github, replacing "yourserver" with your server's name.
 
 Add a new directory 'libbybot', and add the html and javascript files from 
 this github repo directory into that directory.
