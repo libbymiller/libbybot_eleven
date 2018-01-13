@@ -17,9 +17,9 @@ var path = require('path');
 // https://github.com/muaz-khan/WebRTC-Experiment/issues/62
 
 var options = {
-    key: fs.readFileSync("/etc/letsencrypt/archive/yourserver/privkey.pem"),
-    cert: fs.readFileSync("/etc/letsencrypt/archive/yourserver/fullchain.pem"),
-    ca: fs.readFileSync("/etc/letsencrypt/archive/yourserver/chain.pem")
+    key: fs.readFileSync("/etc/letsencrypt/live/yourserver/privkey.pem"),
+    cert: fs.readFileSync("/etc/letsencrypt/live/yourserver/fullchain.pem"),
+    ca: fs.readFileSync("/etc/letsencrypt/live/yourserver/chain.pem")
 };
 
 // force auto reboot on failures
