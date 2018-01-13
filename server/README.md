@@ -14,7 +14,7 @@ I'm assuming Ubuntu.
 
 ## Install and configure Apache 
 
-I used [this guide](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04) for letsencrypt.
+I used [this guide](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04) for letsencrypt - it's probably worth checking that rather than replying on the commands below.
 
 First set up your subdomain, for example 'libbybot.example.com' and make sure your DNS is in place. 
 
@@ -52,14 +52,14 @@ contents:
 
 ## Add certs
 
-    sudo apt-get install git
-    sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
-    cd /opt/letsencrypt
-    ./letsencrypt-auto --apache -d your-server
-    /opt/letsencrypt/letsencrypt-auto renew >> /var/log/le-renew.log
-    sudo /opt/letsencrypt/letsencrypt-auto renew >> /var/log/le-renew.log
-    sudo mkdir /var/log/
-    sudo mkdir /var/log/lets-encrypt
+    # for the certbot code, you now need to install a ppa
+    sudo apt-get install software-properties-common python-software-properties
+    sudo add-apt-repository ppa:certbot/certbot
+    sudo apt-get update
+    sudo apt-get install python-certbot-apache
+    
+    # get the cert  
+    sudo certbot --apache -d your-server
 
 auto-renew
 
@@ -97,4 +97,15 @@ this github repo directory into that directory.
 
 Longer term, you need to figure out how to do notifications. There's a 
 place in [server.js](/../server/server.js) where you can send a dm tweet,
-for example.
+for example, 
+
+    var str = "/usr/local/bin/t dm @youname \"libbybot is live at "+roomName+"\" > tweetlog_online.txt 2>&1";
+
+or a slackbot command (you'll need to auth it first):
+
+    var str = 'curl -X POST --data-urlencode \'payload={\"channel\": \"#foo\", \"username\": \"libbybot_notifier\", \"text\": \"libbybot is online at <https://yourserver:8443/libbybot/remote11.html#'+roomName+'>\", \"icon_emoji\": \":robot_face:\"}\' https://hooks.slack.com/services/examplestr/examplestr';
+    
+then
+
+    exec(str);
+    
