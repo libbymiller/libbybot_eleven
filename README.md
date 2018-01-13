@@ -21,7 +21,7 @@ You need to do the [server](/server) part of this first, then set up the
 
  * Raspberry Pi 3 (other versions don't have the oomph to run chromium and do video, though they can do audio, if you don't want to "see").
  * an official [Raspberry pi power cable](https://shop.pimoroni.com/products/raspberry-pi-universal-power-supply) - we're using a lot of amps! else you may get strange outages.
- * IKEA EXPRESSIVO lamp (discontinued, but most people have one at home, ask around)
+ * IKEA EXPRESSIVO lamp (discontinued, but most people have one at home, ask around). Or [this (thanks Barnoid!)](http://cpc.farnell.com/lloytron/l1101bk/lamp-desk/dp/LA04023) looks very similar.
  * [long Raspberry Pi camera cable](https://shop.pimoroni.com/products/raspberry-pi-camera-cable)
  * [Raspberry Pi camera](https://shop.pimoroni.com/products/raspberry-pi-camera-module-v2-1-with-mount)
  * 2 x 9g servos, small as you can get them ([e.g.](http://www.ebay.co.uk/itm/Mini-SG90-SG-90-Gear-9g-Micro-Servo-For-RC-Airplane-Helicopter-Car-Boat-Arduino/252297215595))
