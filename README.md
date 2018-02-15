@@ -41,9 +41,6 @@ and
  * a hacksaw
  * a phillip's head screwdriver
  * a gluegun
- * a USB mouse
- * maybe a USB keyboard
- * temporary use of an HDMI-compatible monitor or TV
 
 and, once you're up and running
 
@@ -57,7 +54,7 @@ requirements than the Sennheiser.
 Of course you don't have to use an IKEA ESPRESSIVO lamp. This project 
 originally started off much more like a picture frame - you can see the 
 pictures 
-[here](https://www.flickr.com/photos/nicecupoftea/albums/72157677391353664) - 
+[here](https://planb.nicecupoftea.org/2017/03/03/libbybot-presence-with-chromium-51-raspberry-pi-and-rtcmulticonnection-for-webrtc/) - 
 but it's hard to fit the speaker into some sort of sensible shape. My 
 robot research has shown that showing my face to the participants of a 
 teleconference is not necessary as long as I can hear, speak, see and move 
