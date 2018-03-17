@@ -15,4 +15,4 @@ sudo /home/pi/server.py &
 sleep 1
 
 # run the browser
-/usr/bin/chromium-browser --kiosk --disable-infobars --disable-session-crashed-bubble --no-first-run --allow-running-insecure-content --allow-insecure-localhost https://yourserver:8443/libbybot/bot11.html#$myrandom &
+/usr/bin/chromium-browser --kiosk --use-fake-ui-for-media-stream --disable-infobars --disable-session-crashed-bubble --no-first-run --allow-running-insecure-content --allow-insecure-localhost https://yourserver:8443/libbybot/bot11.html#$myrandom &
