@@ -154,9 +154,9 @@ Shutdown and unplug the pi, then -
  * connect the sennheiser to the pi
  * plug in the pi's power again
 
-onnect to https://your-server:8443/remote11.html on a laptop, 
+Connect to https://your-server:8443/remote11.html on a laptop, 
 ideally in Chrome. You should see whatever the Pi's camera is pointing at, 
-and be able to hear too, and speak. You don't need the mouse or screen any more.
+and be able to hear too, and speak. 
 
 Longer term, you need to figure out how to do notifications. There's a 
 place in [server.js](/../server/server.js) where you can send a dm tweet, 
