@@ -152,14 +152,9 @@ Shutdown and unplug the pi, then -
 
  * [connect the camera to the pi](https://www.raspberrypi.org/documentation/usage/camera/README.md)
  * connect the sennheiser to the pi
- * connect the USB mouse to the pi
- * connect the pi to the HDMI screen
  * plug in the pi's power again
 
-Hopefully it will boot fullscreen into the browser and request that you 
-accept access to the the mic and camera. Allow it using the mouse.
-
-Then connect to https://your-server:8443/remote11.html on a laptop, 
+onnect to https://your-server:8443/remote11.html on a laptop, 
 ideally in Chrome. You should see whatever the Pi's camera is pointing at, 
 and be able to hear too, and speak. You don't need the mouse or screen any more.
 
