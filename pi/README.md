@@ -33,6 +33,7 @@ Replace 'N' by the disk number you get in the first step.
 
 contents:
 
+     country=GB
      ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
      update_config=1
 
