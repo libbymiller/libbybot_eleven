@@ -29,7 +29,7 @@ Replace 'N' by the disk number you get in the first step.
 
 (optional, [add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian)) to /Volumes/boot/wpa_supplicant.conf:
 
-    nano /Volumes/boot/wpa_supplicant.conf
+    sudo nano /Volumes/boot/wpa_supplicant.conf
 
 contents:
 
