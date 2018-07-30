@@ -3,7 +3,7 @@
 myrandom=$RANDOM
 echo $myrandom
 
-# if you remove all the profile, you'll have to reenable the camera and mic in the browser
+# sometimes it helps to remove everything
 #rm -rf /home/pi/.config/chromium/
 
 # this is for bad crashes, which leave a lock handing round
