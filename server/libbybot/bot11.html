@@ -33,7 +33,7 @@
     <article>
 
         <header style="text-align: center;">
-            <h1>LibbyBot v7</h1>
+            <h1>LibbyBot v12</h1>
             <p>
             This is the bot side of the code. When loaded on the bot it creates a new room with video and audio and data. It doesn't display much, maybe the number of people and the room number.
 
@@ -56,8 +56,8 @@
         <script src="/socket.io/socket.io.js"></script>
 
         <!-- custom layout for HTML5 audio/video elements -->
-        <script src="https://cdn.webrtc-experiment.com/getMediaElement.js"></script>
-        <script src="https://cdn.webrtc-experiment.com:443/FileBufferReader.js"></script>
+        <script src="getMediaElement.js"></script>
+        <script src="FileBufferReader.js"></script>
 
         <script>
 
@@ -65,7 +65,9 @@
             // no-jquery ajax method for moving the bot
 
             ajax = function(data){
+
               console.log("data");
+
               console.log(data);
               xhr = new XMLHttpRequest();
               xhr.open("POST", "http://localhost:8080", true);
@@ -76,6 +78,7 @@
                  }
               }
               xhr.send(data);
+
             }
 
 
@@ -106,7 +109,7 @@
             connection.enableFileSharing = false; // by default, it is "false".
 
             connection.session = {
-  //tmp              audio: true,
+                audio: true,
                 video: true,
                 data: true
             };
@@ -131,9 +134,13 @@
                   setTimeout(function() {
                       mediaElement.media.play();
                   }, 5000);
-                  ajax("command=arrived");
+                  if(connection.getAllParticipants().length == 1){
+console.log("participants");
+console.log(connection.getAllParticipants().length);
+                       ajax("command=arrived");
+                  }
                 }else{
-                  ajax("command=ison");
+                  ajax("command=centre");
                 }
                 mediaElement.id = event.streamid;
             };
@@ -144,7 +151,7 @@
                     mediaElement.parentNode.removeChild(mediaElement);
                 }
                 if(!connection.getAllParticipants().length) {
-                    ajax("command=gone");
+                    ajax("command=leaving");
                 }
 
             };
@@ -162,7 +169,7 @@
                 }
                 else {
                     document.querySelector('h1').innerHTML = 'Seems session has been closed or all participants left.';
-                    ajax("command=gone");
+                    ajax("command=leaving");
                 }
             };
 
@@ -179,6 +186,10 @@
                 connection.join(useridAlreadyTaken);
             };
 
+            connection.ondisconnected = function (event) {
+                //try and reload
+                window.location.reload(true);
+            };
 
             // ......................................................
             // ......................Handling Room-ID................
