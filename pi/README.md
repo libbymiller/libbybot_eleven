@@ -23,7 +23,7 @@ When it's done, do
 
     touch /Volumes/boot/ssh
 
-[Add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian)) to /Volumes/boot/wpa_supplicant.conf:
+[Add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian) to /Volumes/boot/wpa_supplicant.conf:
 
     sudo nano /Volumes/boot/wpa_supplicant.conf
 
