@@ -13,25 +13,21 @@ This is mostly a matter of making sure the audio and video drivers are
 in place, and then running chromium on boot, together with a simple 
 python server for controlling the servos.
 
-## Set up the Pi with jessie (not Jessie-lite)
+## Set up the Pi with Jessie (not Jessie-lite, and not Stretch)
 
-e.g. on a mac ([here are full instructions](https://www.raspberrypi.org/documentation/installation/installing-images/))
+**Unfortunately Stretch [breaks the video driver bcm2835-v4l2 support in Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=249953), so version 2 of the Pi cameras will not work with it. V2s are the only cameras available, so it's best to use Jessie for now. Old Raspian versions are [here](https://downloads.raspberrypi.org/raspbian/images/) - I used [raspian-2017-07-05](https://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/)**
 
-Replace 'N' by the disk number you get in the first step.
+([Here are full instructions](https://www.raspberrypi.org/documentation/installation/installing-images/)) or use [Etcher](https://etcher.io).
 
-    diskutil list
-    diskutil unmountDisk /dev/diskN
-    sudo dd bs=1m if=~/Downloads/2017-06-21-raspbian-jessie.img of=/dev/rdiskN
-
-(optional, if you want to use ssh) - when it's done, do
+When it's done, do
 
     touch /Volumes/boot/ssh
 
-(optional, [add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian)) to /Volumes/boot/wpa_supplicant.conf:
+[Add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian)) to /Volumes/boot/wpa_supplicant.conf:
 
     sudo nano /Volumes/boot/wpa_supplicant.conf
 
-contents:
+contents (the country first line is important, though it doesn't have to be GB, obviously):
 
      country=GB
      ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -135,11 +131,9 @@ install the python server
 
     sudo pip install bottle
 
-enable the camera and serial
+enable the camera and serial in ```interfaces``` using
 
     sudo raspi-config
-
-enable in interfaces.
 
 Change the pi name and password
 
