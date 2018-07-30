@@ -95,9 +95,7 @@ this github repo directory into that directory.
 
     nohup nodejs server.js > /dev/null 2>&1 &
 
-Longer term, you need to figure out how to do notifications. There's a 
-place in [server.js](/../server/server.js) where you can send a dm tweet,
-for example, 
+Longer term, you need to figure out how to do notifications. There's a place in [server.js](https://github.com/libbymiller/libbybot_eleven/blob/master/server/server.js) where you can send a dm tweet, for example, 
 
     var str = "/usr/local/bin/t dm @youname \"libbybot is live at "+roomName+"\" > tweetlog_online.txt 2>&1";
 
