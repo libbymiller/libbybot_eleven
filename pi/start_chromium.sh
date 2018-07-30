@@ -16,5 +16,4 @@ sleep 1
 
 # run the browser
 # It does need to be kiosk, else the audio may not get picked up
-/usr/bin/chromium-browser --kiosk --use-fake-ui-for-media-stream --disable-infobars --disable-session-crashed-bubble --no-first-run 
---allow-running-insecure-content --allow-insecure-localhost https://yourserver:8443/libbybot/bot12.html#$myrandom &
+/usr/bin/chromium-browser --kiosk --use-fake-ui-for-media-stream --disable-infobars --disable-session-crashed-bubble --no-first-run --allow-running-insecure-content --allow-insecure-localhost https://yourserver:8443/libbybot/bot11.html#$myrandom &
