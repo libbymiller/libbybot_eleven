@@ -11,14 +11,17 @@ import os
 
  
 GESTURE_NOBODY_HOME = [["2", "160"]]
-GESTURE_SOMEBODY_HOME = [["2", "10"]]
-GESTURE_HELLO = [["2","60"],["2","10"]]
-GESTURE_LEAVING = [["2", "160"]]
+GESTURE_SOMEBODY_HOME = [["2", "90"],["1","90"]]
+GESTURE_CENTRE = [["1", "90"]]
+GESTURE_HELLO = [["2","10"],["2","60"]]
+GESTURE_LEAVING = [["2", "0"],["1","90"]]
 GESTURE_LOOKING_ROUND = [["1", "60"],["1", "120"],["1", "90"]]
 GESTURE_REVOLVE_ALL_LEFT = [["1", "180"]]
 GESTURE_REVOLVE_ALL_RIGHT = [["1", "0"]]
 GESTURE_A_BIT_RIGHT = [["1", "40", "p"]]
 GESTURE_A_BIT_LEFT = [["1", "40", "n"]]
+GESTURE_A_BIT_UP = [["2", "40", "p"]]
+GESTURE_A_BIT_DOWN = [["2", "40", "n"]]
 
 ser = serial.Serial('/dev/serial0', 9600)
 
@@ -43,7 +46,8 @@ def index():
         if(command == "arrived"):
           arduino_command = GESTURE_SOMEBODY_HOME
 
-# used by the end user
+# used by the end user / frontend
+
         if(command == "hello"):
           arduino_command = GESTURE_HELLO
         if(command == "leaving"):
@@ -60,7 +64,13 @@ def index():
         if(command == "right_a_bit"):
           arduino_command = GESTURE_A_BIT_RIGHT
 
-# pass through
+        if(command == "down_a_bit"):
+          arduino_command = GESTURE_A_BIT_DOWN
+        if(command == "up_a_bit"):
+          arduino_command = GESTURE_A_BIT_UP
+
+
+# pass through for testing, e.g. 1 90 or 2 30
 
         if(command.startswith("1") or command.startswith("2")):
           arduino_command = [command.split(" ")]
