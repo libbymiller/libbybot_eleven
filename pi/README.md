@@ -17,7 +17,7 @@ python server for controlling the servos.
 
 **Unfortunately Stretch [breaks the video driver bcm2835-v4l2 support in Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=249953), so version 2 of the Pi cameras will not work with it. V2s are the only cameras available, so it's best to use Jessie for now. Old Raspian versions are [here](https://downloads.raspberrypi.org/raspbian/images/) - I used [raspian-2017-07-05](https://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/)**
 
-([Here are full instructions for burning an SD card](https://www.raspberrypi.org/documentation/installation/installing-images/)) or use [Etcher](https://etcher.io).
+[Here are full instructions for burning an SD card](https://www.raspberrypi.org/documentation/installation/installing-images/) or use [Etcher](https://etcher.io).
 
 When it's done, do
 
