@@ -25,7 +25,7 @@ When it's done, do
 
 [Add in your wifi network creds](https://www.raspberrypi.org/blog/page/2/?fish#another-update-raspbian) to /Volumes/boot/wpa_supplicant.conf:
 
-    sudo nano /Volumes/boot/wpa_supplicant.conf
+    nano /Volumes/boot/wpa_supplicant.conf
 
 contents (the country first line is important, though it doesn't have to be GB, obviously):
 
