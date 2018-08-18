@@ -30,7 +30,7 @@ You need to do the [server](/server) part of this first, then set up the
  * 6 x MF jumper cables 
  * a [Sennheiser USB speaker / mic](http://www.exteradirect.co.uk/product/sennheiser/sp20-portable-speakerphone-usb-&-3.5mm/3258/)
  * Arduino nano (e.g. a [clone](http://www.ebay.co.uk/itm/Mini-USB-Nano-V3-0-ATmega328P-CH340-5V-16MHz-SOLDERED-HEADS-Arduino-UK-/262738901345))
- * an old CD or a [custom laser cut shape](doc/laser_cut_base)
+ * an old CD or a [custom laser cut shape](doc/laser_cut_base) - and 6 x 3 or 4mm diameter ball barings
  * little rubber feet ([e.g.](https://www.amazon.co.uk/Domed-Rubber-Buffers-Kitchen-Doors/dp/6040143746/ref=sr_1_1))
  * 1 thin small cable tie
  * a 2cm x 1cm x 3mm (or 5mm) piece of plastic or something equally tough
