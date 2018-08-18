@@ -14,9 +14,9 @@ pieces, toegther with the power cable.
 Remove the glass plate from the top, the bulb and any bits of wires 
 connected to it.
 
-Snap off the inside segments of the base to make as much room as you can.
+With pliers, snap off the inside segments of both parts of the base to make as much room as you can. 
 
-Carefully saw the backs off the top arial covers. But don't saw off too much....
+Carefully saw the backs off the top ariel covers. Don't saw off too much - just up to the curved point to make a straight line. 
 
 <img src="images/top_side_view.jpg" width="500px"/>
 
