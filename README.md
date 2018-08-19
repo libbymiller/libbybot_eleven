@@ -3,7 +3,7 @@
 Eleventh incarnation of 
 [libbybot](https://planb.nicecupoftea.org/2017/03/03/libbybot-presence-with-chromium-51-raspberry-pi-and-rtcmulticonnection-for-webrtc/), a cheapo, remotely-posable presence robot using [webRTC](https://en.wikipedia.org/wiki/WebRTC) and a Raspberry Pi, currently living in an IKEA lamp
 
-Contains full instructions and code.
+Contains full instructions and code. 
 
 <img src="https://libbymiller.files.wordpress.com/2017/07/image_uploaded_from_ios.jpg" width="500" alt="Libbybot 8"/>
 
@@ -13,6 +13,7 @@ You need to do the [server](/server) part of this first, then set up the [arduin
 
 ## What you'll need:
 
+ * Time: this takes a few hours at least even if you know what you are doing. It's not a quick project.
  * Raspberry Pi 3 (other versions don't have the oomph to run chromium and do video, though they can do audio, if you don't want to "see").
  * an official [Raspberry pi power cable](https://shop.pimoroni.com/products/raspberry-pi-universal-power-supply) - we're using a lot of amps! else you may get strange outages.
  * IKEA EXPRESSIVO lamp (discontinued, but most people have one at home, ask around). Or [this (thanks Barnoid!)](http://cpc.farnell.com/lloytron/l1101bk/lamp-desk/dp/LA04023) looks very similar.
