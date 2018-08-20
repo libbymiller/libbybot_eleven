@@ -79,14 +79,9 @@ def index():
 
         if(command == "halt"):
           arduino_command = GESTURE_LEAVING
-          ser.write(str(arduino_command)+"\n")
-          time.sleep(5)
-          result = os.system("sudo halt")
+
         if(command == "reboot"):
           arduino_command = GESTURE_LEAVING
-          ser.write(str(arduino_command)+"\n")
-          time.sleep(5)
-          result = os.system("sudo reboot")
 
 # each subarray is a command
 # motor 1 is the base (rotate)
@@ -95,7 +90,13 @@ def index():
         for ac in arduino_command: 
           print(" ".join(ac)+"\n")
           ser.write(" ".join(ac)+"\n")
-
+        
+        if(command == "halt"):
+          time.sleep(5)
+          result = os.system("sudo halt")
+        if(command == "reboot"):
+          time.sleep(5)
+          result = os.system("sudo reboot")
 
     response.set_header('Access-Control-Allow-Origin', '*')
     result = "ok: "+command
