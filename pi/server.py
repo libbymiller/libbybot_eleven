@@ -17,10 +17,10 @@ GESTURE_LEAVING = [["2", "40"],["1","90"]]
 GESTURE_LOOKING_ROUND = [["1", "60"],["1", "120"],["1", "90"]]
 GESTURE_REVOLVE_ALL_LEFT = [["1", "180"]]
 GESTURE_REVOLVE_ALL_RIGHT = [["1", "0"]]
-GESTURE_A_BIT_RIGHT = [["1", "20", "p"]]
-GESTURE_A_BIT_LEFT = [["1", "20", "n"]]
-GESTURE_A_BIT_UP = [["2", "20", "p"]]
-GESTURE_A_BIT_DOWN = [["2", "20", "n"]]
+GESTURE_A_BIT_RIGHT = [["1", "40", "p"]]
+GESTURE_A_BIT_LEFT = [["1", "40", "n"]]
+GESTURE_A_BIT_UP = [["2", "40", "p"]]
+GESTURE_A_BIT_DOWN = [["2", "40", "n"]]
 
 ser = serial.Serial('/dev/serial0', 9600)
 
