@@ -16,13 +16,13 @@ Remove the glass plate from the top, and the bulb and any bits of wires connecte
 
 With pliers, snap off the inside segments of both parts of the base to make as much room as you can. 
 
-<a href="images/snap_off1.JPG"><img src="images/snap_off1.JPG" width="200px" /></a><a href="images/snap_off1.JPG"><img src="images/snap_off1.JPG" width="200px" /></a>
+<a href="images/snap_off1.JPG"><img src="images/snap_off1.JPG" width="200px" /></a><a href="images/snap_off2.JPG"><img src="images/snap_off2.JPG" width="200px" /></a>
 
-Carefully saw the backs off the top ariel covers. Don't saw off too much - just up to the curved point to make a straight line, and then saw the corner off the inside of each one (see pictures)
+Carefully saw the backs off the top ariel covers. Don't saw off too much - just up to the curved point to make a straight line, and then saw the corner off the inside of each one.
 
 <a href="images/ariel_saw1.JPG"><img src="images/ariel_saw1.JPG" width="200px" /></a><a href="images/ariel_saw2.JPG"><img src="images/ariel_saw2.JPG" width="200px" /></a><a href="images/ariel_saw3.JPG"><img src="images/ariel_saw3.JPG" width="200px" /></a>
 
-Saw or dremel a hole in the back of the base. This needs to be wide and deep enough to get a USB cable and a wifi camera cable into (it's also sometimes useful to be able to get the Ethernet cable in too if possible). About 1cm x 4cm half way between the bottoms of the ariels and the rim of the base will do the job (see picture).
+Saw or dremel a hole in the back of the base. This needs to be wide and deep enough to get a USB cable and a wifi camera cable into (it's also sometimes useful to be able to get the Ethernet cable in too if possible). About 1cm x 4cm half way between the bottoms of the ariels and the rim of the base will do the job. Tidy it up with sandpaper.
 
 <a href="images/usb_hole1.JPG"><img src="images/usb_hole1.JPG" width="200px" /></a><a href="images/usb_hole2.JPG"><img src="images/usb_hole2.JPG" width="200px" /></a>
 
@@ -44,7 +44,7 @@ In the serial part of the arduino IDE, type "2 10". This is the lowest point for
  
 <a href="images/parallel_to_servo_body.JPG"><img src="images/parallel_to_servo_body.JPG" width="200px"  /></a>
 
-Now type "2 60" in the Arduino IDE. This is the highest point of the head. Holding the horn with it facing you, the body of the servo should turn clockwise by 50 degrees. Type "2 10" again to get it back to its starting position.
+Now type "2 60" in the Arduino IDE. This is the highest point of the head. Holding the horn with it facing you, the body of the servo should turn clockwise by 50 degrees. Type "2 10" again to get it back to its starting position. 
 
 Now reassemble and position the lamp:
  * tighten the ariel's bottom screws as tight as they go
@@ -116,13 +116,13 @@ This is quite a wedge and it's why you need the smallest 9g servo you can find.
 
 Basically the Pi goes in the bottom at an angle with the breadboard underneath the Pi. It needs to be placed at a downward angle so that the USB port is accessble through the slot, and so that there's room for the servo and the servo isn't squishing the camera cable.
 
-<a href="images/asssemble.JPG"><img src="images/asssemble.JPG" width="200px" /></a>
+<a href="images/assemble.JPG"><img src="images/assemble.JPG" width="200px" /></a>
 
 First, make sure you've programmed the Arduino and got the Pi on the network you want to use it on, and that you've connected the Arduino via serial to the Pi (see above). You can't reprogramme the Arduino once it's in because it can't be programmed with the serial attached.
 
 Connect the power cable to the Pi, and, making sure you have the lamp base the right way round (there's a notch at the back) carefully mark and saw a wedge out of the base for it to fit. It must not be forced or bend! You may also need to saw off the top of one of the base plate's screw casings (make sure you get the right one).
 
-<a href="images/power_hole2.JPG"><img src="images/power_hole2.JPG" width="200px" /><a href="images/power_hole.JPG"><img src="images/power_hole.JPG" width="200px" /></a><a href="images/saw_a_notch.jpg"><img src="images/saw_a_notch.jpg" width="200px"/></a><img src="images/saw_the_screw_casing.jpg" width="300px"/></a><img src="images/fit_the_psu.jpg" width="300px"/></a>
+<a href="images/power_hole2.JPG"><img src="images/power_hole2.JPG" width="200px" /><a href="images/power_hole.JPG"><img src="images/power_hole.JPG" width="200px" /></a>
 
 Connect the Sennheiser through the slot to the USB port.
 
