@@ -297,7 +297,8 @@ ioServer(httpApp).on('connection', function(socket) {
       //e.g. using  https://github.com/sferik/t
       //var str = "/usr/local/bin/t dm @libbymiller \"libbybot is live at "+roomName+"\" >  tweetlog_online.txt 2>&1";
       //e.g using slack
-      var str = 'curl -X POST -H \'Content-type: application/json\' --data \'{"text": "libbybot is online at <https://libbybot.nicecupoftea.org:8443/libbybot/remote.html#'+roomName+'>"}\' https://hooks.slack.com/services/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';
+      var str = 'curl -X POST --data-urlencode \'payload={\"channel\": \"#foo\", \"username\": \"libbybot_notifier\", \"text\": \"libbybot is online at <https://yourserver:8443/libbybot/remote11.html#'+roomName+'>\", \"icon_emoji\": \":robot_face:\"}\' https://hooks.slack.com/services/examplestr/examplestr';
+
       console.log(str);
       exec(str);
     }
