@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bot.css" />
+</head>
+
+<body onload="openOrJoinRoom()">
+   <header>
+    <h1>LibbyBot v12</h1>
+    <p>
+      This is the bot side of the code. When loaded on the bot it creates a new room with video and audio and data. It doesn't display much, maybe the number of people and the room number.
+    </p>
+  </header>
+
+  <div>
+    <span id="room-urls"></span>, <span id="num_connected"></span> connected.
+  </div>
+
+  <div id="videos-container"></div>
+
+  <div id="chat-container">
+    <div class="chat-output"></div>
+  </div>
+
+</body>        
+<script src="/socket.io/socket.io.js"></script>
+<script src="/dist/RTCMultiConnection.js"></script>
+<script src="/libbybot/simple-webrtc.js"></script>        
+<script>
+
+//used for the server to detect when the bot arrives
+connection.extra.username = "libbybot";
+connection.socketCustomEvent = "libbybot "+roomid;
+connection.leaveOnPageUnload = true;
+
+//for commands we use the data channel
+connection.session = {
+  video: true,
+  audio: true,
+  data: true
+};
+
+//the bot sends audio and video, the remote client just audio
+connection.mediaConstraints.video = true;
+
+//for commands we use the data channel
+connection.onmessage = appendDIV;
+
+//for debugging
+connection.onopen = function() {
+  var num_participants = connection.getAllParticipants().length;
+  document.querySelector('#num_connected').innerHTML = num_participants;
+};
+
+// no-jquery ajax method for moving the bot via a server running locally on the pi
+ajax = function(data){
+
+  console.log("data",data);
+
+  xhr = new XMLHttpRequest();
+  xhr.open("POST", "http://localhost:8080", true);
+  xhr.setRequestHeader("Content-type", "application/json");
+  xhr.onreadystatechange = function () { 
+     if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log("ok");
+     }
+  }
+  xhr.send(data);
+
+}
+
+// show the commands and send them
+
+var chatContainer = document.querySelector('.chat-output');
+
+function appendDIV(event) {
+  console.log("command="+event.data);
+  ajax("command="+event.data);
+  var div = document.createElement('div');
+  div.innerHTML = event.data || event;
+  chatContainer.insertBefore(div, chatContainer.firstChild);
+  div.tabIndex = 0;
+  div.focus();
+}
+        
+</script>
+
+</html>

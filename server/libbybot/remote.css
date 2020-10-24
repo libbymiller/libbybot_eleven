@@ -1,0 +1,74 @@
+body {
+   margin:0;
+   font-size:20;
+   font-weight:bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.third {
+   width:33%;
+   float:left;
+}
+#header {
+    background-color: #dad8c3;
+    color: black;
+    border:0;
+    height:30px;
+    line-height:30px;
+    padding:2%;
+}
+
+.text {
+}
+#mute {
+  font-size:50px;
+  padding:10px;
+}
+.username {
+  text-align:center;
+  padding-top:10px;
+}
+
+#videos-container {
+}
+
+.media-container {
+    padding:10px;
+}
+
+.centre{
+   text-align:center;
+   cursor:pointer;
+}
+video{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    min-width: 500px;
+}
+audio{
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+video {
+/*    object-fit: fill;
+    object-fit: contain;*/
+}
+
+button,
+input,
+select {
+    font-weight: normal;
+    padding: 2px 4px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.make-center {
+    text-align: center;
+    padding: 5px 10px;
+}
